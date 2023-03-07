@@ -102,7 +102,11 @@ doctype_js = {"Purchase Order" : "public/js/purchase_order.js"}
 # Document Events
 # ---------------
 # Hook on document methods and events
-
+doc_events = {
+	"Purchase Order": {
+		"on_submit": "mbc.utils.purchase_order.make_sales_order",
+	},
+}
 # doc_events = {
 #	"*": {
 #		"on_update": "method",
